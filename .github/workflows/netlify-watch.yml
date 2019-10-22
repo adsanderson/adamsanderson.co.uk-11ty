@@ -1,0 +1,18 @@
+name: CI
+
+on: [push]
+
+jobs:
+  watch:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: netlify/actions/cli@master
+    - name: Netlify cli watch
+      env:
+        NETLIFY_AUTH_TOKEN:  ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+      run: netlify watch
+    
+
