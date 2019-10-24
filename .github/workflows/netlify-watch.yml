@@ -1,8 +1,6 @@
-name: Testing triggers
+name: Testing triggers 3
 
-on:
-  check_run:
-    types: [completed]
+on: repository_dispatch
 
 jobs:
   watch:
