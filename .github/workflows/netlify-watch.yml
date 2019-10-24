@@ -2,7 +2,7 @@ name: Testing triggers 2
 
 on:
   check_run:
-    types: [completed]
+    types: [rerequested, requested_action]
 
 jobs:
   watch:
