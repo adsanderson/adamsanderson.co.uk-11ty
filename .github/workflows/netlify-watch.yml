@@ -1,8 +1,7 @@
-name: Testing triggers 2
+name: Testing triggers 3
 
 on:
-  check_run:
-    types: [rerequested, requested_action]
+  on: repository_dispatch
 
 jobs:
   watch:
