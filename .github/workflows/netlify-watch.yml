@@ -1,4 +1,4 @@
-name: Testing triggers
+name: Testing triggers 2
 
 on:
   check_run:
